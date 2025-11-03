@@ -522,7 +522,6 @@ const handleMcpRequest: RequestHandler = async (req, res) => {
     return
   }
 
-
   if (type === 'AskForService') {
     try {
       console.info("----------> received gator client service request with VC containing recuring payment information ")

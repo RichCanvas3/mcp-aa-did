@@ -596,10 +596,10 @@ export const SendMcpMessage: React.FC<SendMcpMessageProps> = ({ onAAWalletDeploy
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-          type: 'SendAADIDJWT',
-          payload: {
-              action: 'ServiceSubscriptionRequest'
-          },
+            type: 'SendAADIDJWT',
+            payload: {
+                action: 'ServiceSubscriptionRequest'
+            },
           }),
       });
       const challengeData : any = await challengeResult.json()

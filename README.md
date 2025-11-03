@@ -301,3 +301,83 @@ ETHEREUM_RPC_URL=your_mainnet_rpc_url
 ## License
 
 MIT
+
+
+HACKATHON NOTES:
+
+🚀 The Future of Organizational Digital Wallets and Online Trust
+Empowering seamless and secure Web3 interactions for organizations
+
+MyOrgWallet.io helps organizations operate and build trust in a world where agent-to-agent communication is outpacing Web2 traffic
+
+
+
+MetaMask Dev Cook-Off focus on Identity and OnChain Reputation are essential components of MyOrgWallet.io. Building online organization trust is much bigger then just KYB. The key is that businesses maintain control over building their reputation in a way that is verifiable yet privacy-preserving—enabling them to selectively disclose credible signals while safeguarding sensitive data.
+
+Our solution fully leverages MetaMask DTK, Circle CCTP v2 and LiFi and associated capabilities to:
+- Build organization on-chain reputation through verifiable credentials, attestations, and zero knowledge proofs.
+- Provide organization explorer via a standardized org trust score
+- Provide an MCP agent-to-agent platform standards for establishing trust (did:aa interop)
+
+
+Why our focus on Money and Chart-Of-Accounts?
+
+This Dev Cook-off focus on money (MetaMask Card, Circle USDC, LiFi) could not have come at a better time for our platform evolution. 
+
+Organizations build trust and loyalty with both customers and third parties by demonstrating the ability to handle money safely, securely, transparently, and credibly. An initial payment or loan is just the beginning of a long-term, trusted relationship. On-chain mechanisms for refunds, loyalty rewards, installment plans, and referral incentives will define the next generation of Web3 experiences—where financial interactions are not just transactions, but trust-building moments.
+
+Our README page presents videos and implementations that directly address capabilities talked about in all 5 Tracks. We believe our solutions directly meet the true spirit of these tracks.
+
+https://github.com/RichCanvas3/MyOrgWallet
+https://github.com/RichCanvas3/mcp-aa-did
+
+
+We have worked hard to demonstrate the power of these core technologies within real world use-cases.
+
+myOrgWallet use-cases incorporating USDC single-chain and cross-chain transactions
+
+LiFi USDC transfer from Optimism AA (Savings Account) to Linea MetaMask Card (MetaMask EOA account)
+
+CCTP v2 USDC transfer from Eth Sepolia Testnet to Linea Sepolia Testnet
+
+ERC-20 USDC transfer between Optimism AA (Savings Account) to Optimism EOA
+
+CCTP v2 MCP Agent-to-Agent USDC transfer from Client (USDC burn), post to Service (attestation read, USDC mint). Fully trusted via did:aa based nounce and VC/VP exchanges.
+
+ERC-20 MCP Agent-to-Agent Eth on-chain transfer. Fully trusted leveraging did:aa Client/Service integration
+
+ERC-7715 Permission Delegation Transfer
+
+MetaMask Card Validation and USDC widrawl analytics. Used for Organization Leadership KYC.
+
+
+
+Technical Architecture - this is our target
+
+linea L2 - MetaMask DTK - Verax Attestation - Masca - Veramo - LiFi - USDC - Linea Name Service - Coinmunity - Account Abstraction DID - zkProofs - Agentic AI - LangChain Tech - OpenAI tech - Ontology (RichCanvas)
+
+
+Our current technology stack was chosen as a gateway to our Technical Architecture. For example we us Optimism L2 and EAS because it was the available mainnet platform that works with MetaMask DTK. Our demonstration use-cases leverage multiple mainnets and testnets so we could demonstrate the features of LiFi, CCTP v2, and all the MetaMask DTK.
+
+Over the next several months we look forward to be able to consolidated on a Synergistic Ecosystem build around linea L2. I would hope that our extensive use of EAS would show our commitment to on-chain trust/reputation and the Verax vision.
+
+
+
+Logical Architecture
+
+Although not a focus of this hackathon, myOrgWallet.io fully leverages the power of MetaMask design principles for security, extensibility, scalability, interoperability, transparency and usability.
+
+
+All organization sensitive information is held in Verifiable Credentials stored within MetaMask Snap storage (masca/veramo). Associated on-chain attestations hold only limited data. Zero-Knowledge proofs provide trusted linkage between attestations and VC issuers.
+
+
+
+All MyOrgWallet information (other than VC's) are maintain on-chain via attestations, delegations, and zero-knowledge proofs. Full data integrity is maintained. The Delegation frameworks provided within DTK are an essential part of our solution.
+
+
+
+Simplified user experience powered by MetaMask: We fully leverage MetaMask’s Delegation Toolkit, Snaps, and related technologies to streamline interactions and reduce complexity for end users.
+
+
+
+Lovable.dev is our benchmark of how an AI assistant can blend the power of an app with the simplicity of conversation. All actions within MyOrgWallet will be intent driven and callable by our AI Assistant. We fully leverage LangChain Graph, Agents, Tools and associated OpenAI LLM's to drive application interaction.
